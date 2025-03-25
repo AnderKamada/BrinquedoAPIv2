@@ -21,14 +21,14 @@ namespace BrinquedoAPIv2.Controllers
             _context = context;
         }
 
-        // GET: api/Brinquedoes
+    
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Brinquedo>>> GetBrinquedos()
         {
             return await _context.Brinquedos.ToListAsync();
         }
 
-        // GET: api/Brinquedoes/5
+    
         [HttpGet("{id}")]
         public async Task<ActionResult<Brinquedo>> GetBrinquedo(int id)
         {
@@ -42,8 +42,7 @@ namespace BrinquedoAPIv2.Controllers
             return brinquedo;
         }
 
-        // PUT: api/Brinquedoes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBrinquedo(int id, Brinquedo brinquedo)
         {
@@ -73,8 +72,7 @@ namespace BrinquedoAPIv2.Controllers
             return NoContent();
         }
 
-        // POST: api/Brinquedoes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+    
         [HttpPost]
         public async Task<ActionResult<Brinquedo>> PostBrinquedo(Brinquedo brinquedo)
         {
@@ -84,7 +82,7 @@ namespace BrinquedoAPIv2.Controllers
             return CreatedAtAction("GetBrinquedo", new { id = brinquedo.Id }, brinquedo);
         }
 
-        // DELETE: api/Brinquedoes/5
+     
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBrinquedo(int id)
         {
