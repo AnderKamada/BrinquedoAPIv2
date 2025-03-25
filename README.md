@@ -7,11 +7,6 @@ Clone o repositório:
 git clone https://github.com/seu-usuario/BrinquedoAPIv2.git
 
 Abra o projeto no Visual Studio:
-
-Configure a connection string (arquivo appsettings.json): 
-
-"ConnectionStrings": {
-  "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=BrinquedoDBv2;Trusted_Connection=True;" }
   
 Abra o Package Manager Console e execute: 
 
