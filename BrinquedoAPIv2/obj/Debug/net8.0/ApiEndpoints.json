@@ -1,0 +1,132 @@
+[
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.BrinquedoesController",
+    "Method": "GetBrinquedos",
+    "RelativePath": "api/Brinquedoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BrinquedoAPIv2.Models.Brinquedo, BrinquedoAPIv2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.BrinquedoesController",
+    "Method": "PostBrinquedo",
+    "RelativePath": "api/Brinquedoes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brinquedo",
+        "Type": "BrinquedoAPIv2.Models.Brinquedo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BrinquedoAPIv2.Models.Brinquedo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.BrinquedoesController",
+    "Method": "GetBrinquedo",
+    "RelativePath": "api/Brinquedoes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BrinquedoAPIv2.Models.Brinquedo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.BrinquedoesController",
+    "Method": "PutBrinquedo",
+    "RelativePath": "api/Brinquedoes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "brinquedo",
+        "Type": "BrinquedoAPIv2.Models.Brinquedo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.BrinquedoesController",
+    "Method": "DeleteBrinquedo",
+    "RelativePath": "api/Brinquedoes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrinquedoAPIv2.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BrinquedoAPIv2.WeatherForecast, BrinquedoAPIv2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

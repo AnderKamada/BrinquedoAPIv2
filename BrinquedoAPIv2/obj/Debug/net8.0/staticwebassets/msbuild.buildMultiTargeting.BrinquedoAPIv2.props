@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BrinquedoAPIv2.props" />
+</Project>
